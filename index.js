@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 mongoose.set('strictQuery', true);
-mongoose.connect(process.env.MONGO_URL, err => {
+mongoose.connect(process.env.mongo_url, err => {
     if (err)
         console.log(err.message);
     else
